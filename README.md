@@ -1,7 +1,7 @@
 # vue-multipage1
 
-> 基于vue-cli的vue多页应用
-> 参考 [参考](http://www.cnblogs.com/fengyuqing/p/vue_cli_webpack.html "悬停显示")
+> 基于vue-cli的vue多页应用<br>
+> 参考 [http://www.cnblogs.com/fengyuqing/p/vue_cli_webpack.html](http://www.cnblogs.com/fengyuqing/p/vue_cli_webpack.html "悬停显示")
 
 ## Build Setup
 
