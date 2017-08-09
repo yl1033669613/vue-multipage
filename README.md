@@ -24,7 +24,7 @@ ie兼容9
 使用`bootstrap-vue`
 
 ## 目录
-```
+
 * build
 * src
 	* common    公共 css 和js等 
@@ -39,5 +39,4 @@ ie兼容9
     		* detail.js
     		* App.vue
 * static 静态资源
-```
 
