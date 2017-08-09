@@ -1,36 +1,23 @@
 <template>
   <div id="app">
-    <only-slide :option="slideOption" class="slide-part"></only-slide>
+    <only-slide :option="slideOption" style="margin: 0 auto;"></only-slide>
 
-    <b-alert :show="dismissCountDown" dismissible variant="warning" @dismiss-count-down="countDownChanged" class="alertbox">
+    <b-alert :show="dismissCountDown" dismissible variant="warning" @dismiss-count-down="countDownChanged" style="margin-top: 10px">
         This alert will dismiss after {{dismissCountDown}} seconds...
     </b-alert>
-    <div class="thebtn">
+    <div>
       <b-btn @click="showAlert" variant="info" class="m-1">Show alert with count-down timer</b-btn>
     </div>
 
-    <a href="/module/comment_page.html" class="ccc">点击跳转详情</a>
+    <a href="/module/detail.html">点击跳转详情</a>
     <button @click="getJson">点击获取Json</button>
   </div>
 </template>
 
 <script>
-  import "babel-polyfill"
-  import Vue from 'vue'
-  import axios from 'axios'
-  import VueAxios from 'vue-axios'
-  import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
-  import OnlySlide from 'components/only_slide/only_slide'
-
-  import 'common/css/reset.css'
-  import 'bootstrap/dist/css/bootstrap.css'
-  import 'bootstrap-vue/dist/bootstrap-vue.css'
-
   import Common from 'common/js/common.js'
 
-  Vue.use(VueAxios, axios)
-  Vue.use(BootstrapVue)
-  Vue.axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+  import OnlySlide from 'components/only_slide/only_slide'
 
   export default {
     name: 'app',
@@ -132,8 +119,8 @@
     },
     methods:{
       getJson (){
-        Vue.axios.post('/test.json',{name:"sdsd",password:"123"}).then((res) => {
-          console.log(response.data)
+        this.$axios.get('http://localhost:3000/test').then((res) => {
+          console.log(res.data)
         }).catch((err) => {
           console.log(err)
         })
@@ -156,18 +143,5 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-    .ccc{
-      color: #0ff;
-    }
-  }
-  .slide-part{
-    margin: 0 auto;
-  }
-  .thebtn{
-    display: block;
-    width: 100%;
-  }
-  .alertbox{
-    margin-top: 10px;
   }
 </style>

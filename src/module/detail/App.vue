@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <comment></comment>
+    <img src="./images/logo.png" style="width: 100px;">
+    <div>详情内容</div>
   </div>
 </template>
 
 <script>
-  import "babel-polyfill"
-  import 'common/css/reset.css';
-  import Comment from 'components/comment/comment_area'
+  import Common from 'common/js/common.js'
 
   export default {
     name: 'app',
     components: {
-      Comment
+
     }
   }
 </script>
@@ -22,6 +21,7 @@
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-align: center;
     color: #2c3e50;
     margin-top: 60px;
   }

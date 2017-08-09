@@ -13,6 +13,8 @@ Vue.use(BootstrapVue)
 Vue.axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded'
 Vue.prototype.$axios = Vue.axios
 
+
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
   template: '<App/>',
