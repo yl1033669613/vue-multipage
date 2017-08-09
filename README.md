@@ -25,19 +25,19 @@ ie兼容9
 
 ## 目录
 ```
-*build
-*src
-	*common    公共 css 和js等 
-	*components    组件
-	*module    各个模块
-  		*index    index页
-    		*index.html    html
-    		*index.js    js vue实例
-    		*App.vue     根组件
-  		*detail    detail页
-    		*detail.html
-    		*detail.js
-    		*App.vue
-*static 静态资源
+* build
+* src
+	* common    公共 css 和js等 
+	* components    组件
+	* module    各个模块
+  		* index    index页
+    		* index.html    html
+    		* index.js    js vue实例
+    		* App.vue     根组件
+  		* detail    detail页
+    		* detail.html
+    		* detail.js
+    		* App.vue
+* static 静态资源
 ```
 
